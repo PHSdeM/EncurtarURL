@@ -9,18 +9,17 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #1E272E;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK0Y3IEnDKkLveDQdf9CwHP3JmgCZ4WRmnmiPuzFXKTpEgao0413GemGTXtRq-hn3KlZI&usqp=CAU')
 }
 
 .header {
     overflow: hidden;
-    background-color: #1E272E;
     padding: 20px 10px;
   }
   
   .header a {
     float: left;
-    color: #fff;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 12px;
     text-decoration: none;
@@ -30,17 +29,18 @@ body {
   }
   
   .header a.logo {
-    font-size: 25px;
+    color: rgb(0, 251, 243);
+    font-size: 48px;
     font-weight: bold;
   }
   
   .header a:hover {
-    background-color: #ddd;
+    background-color: rgb(236, 215, 215);
     color: black;
   }
   
 .active {
-    background-color: #8D8DDD;
+    background-color: #4a4aef;
     color: #000;
   }
   
@@ -70,37 +70,60 @@ body {
 }
 
 .title {
+    text-align: center;
     font-size: 3.5rem;
-    margin-bottom: 3rem;
-    color: #FFF;
+    margin-bottom: 6rem;
+    color: rgb(0, 251, 243);
 }
 
 .box-input {
-    width: 100%;
-    display: flex;
     justify-content: center;
 }
 
 .input-url {
     padding: 1.2rem 2rem;
-    text-align: center;
     outline: transparent;
-    width: 40%;
-    border-radius: 50rem;
-    color: #1E272E;
+    width: 40rem;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(0, 251, 243);;
 }
 
 .btn {
-    padding: 1.5rem 2rem;
-    width: 17rem;
-    margin-left: 1rem;
-    border-radius: 5rem;
-    background-color: #8D8DDD;
-    font-size: 2rem;
-    color: #1E272E;
-    transition: all .3s ease;
+    color: rgb(0, 251, 243);
+    background-color: rgba(255, 228, 196, 0.209);
+    border: 2px solid rgba(9, 255, 247, 0.34);
+    border-radius: 50px;
+    padding: 18px 36px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 2px 0 0 0 #04effb;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
 }
 
 .btn:hover {
-    background-color: #FF0000;
+    color: #FFF;
+    box-shadow: inset 400px 0 0 0 #04effb;
+}
+
+.footer {
+    display: block;
+    position: absolute;
+    justify-content: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #FFF;
+    text-align: center;
+    transition: ease-out 0.4s;
+}
+
+.footer:hover {
+    transform: translateY(-15px);
+    font-size: 48px;
 }
