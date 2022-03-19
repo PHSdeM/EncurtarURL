@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encutador Url</title>
+    <link rel="icon" type="image/jpg" href="./img/icons8-link-64.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="header">
-        <a href="#default" class="logo">CompanyLogo</a>
+    <div class="header" id="home">
+        <a href="#default" class="logo">ShortenURL <img src="./img/icons8-link-64.png" alt="Icon Link" class="img_logo"></a>
         <div class="header-right">
-          <a href="#" class="active">Home</a>
+          <a href="#home" class="active">Home</a>
           <a href="#contact">Contact</a>
           <a href="#about" >About</a>
         </div>
@@ -25,9 +27,57 @@
         </div>
     </div>
 
-    <div class="footer">
-        <p>&copy; Pedro Moura</p>
-    </div>
+    <section id='contact'>
+        <h5>Get In Touch</h5>
+        <h2>Contact Me</h2>
+  
+  
+        <div class="container contact__container">
+          <div class="contact__options">
+            <article class="contact__option">
+              <img src="./img/icons8-gmail-48.png" class='contact__option-icon' />
+              <h4>Email</h4>
+              <h5>dasdasdasdas@gmail.com</h5>
+              <a href="mailto:pedrohsantosdemoura@gmail.com" target='_blank'>Send a message</a>
+            </article>
+            <article class="contact__option">
+              <img src="./img/icons8-linkedin-48.png"class='contact__option-icon' />
+              <h4>LinkedIn</h4>
+              <h5>Pedro Moura</h5>
+              <a href="https://www.linkedin.com/in/pedrohsdm/" target='_blank'>Send a message</a>
+            </article>
+            <article class="contact__option">
+              <img src="./img/icons8-whatsapp-48.png" class='contact__option-icon' />
+              <h4>WhatsApp</h4>
+              <h5>Entry in contact</h5>
+              <a href="https://api.whatsapp.com/send?phone=+55067996298137" target='_blank'>Send a message</a>
+            </article>
+          </div>
+  
+          <form name="option__form">
+            <input type="text" id="nameid" name='name' placeholder='Your Full Name' required />
+            <input type="email" name='email' placeholder='Your Email' required />
+            <textarea name="message" placeholder='Your Message' rows="7" required></textarea>
+            <input type="submit" class="btn" onclick="Enviar();" value="Send message">
+          </form>
+        </div>
+      </section>
+
+    <section id="about">
+        <footer>
+            <a href="#" class="footer__logo">Pedro Moura</a>
+        <div class="footer__socials">
+            <a href="https://www.linkedin.com/in/pedrohsdm/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/PHSdeM" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="https://www.instagram.com/phsdem/" target="_blank"> <i class="fa fa-instagram"></i></a>
+            <a href="https://twitter.com/__pedrohenrii" target="_blank"><i class="fa fa-twitter"></i></a>
+          </div>
+          <div class="footer__copyright">
+            <small>&copy; Pedro Moura. All rights reserved.</small>
+          </div>
+        </footer>
+    </section>
+    
     <script src="app.js"></script>
 </body>
 </html>
